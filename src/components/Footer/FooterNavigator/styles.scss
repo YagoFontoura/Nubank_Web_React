@@ -1,0 +1,53 @@
+.FooterNavigatorContainer {
+    background-color: #111111;
+    height: 100vh;
+    
+    .FooterNavigatorContainerGrid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 50px;
+    
+      .FooterNavigatorMenu {
+        margin-top: 75px;
+        margin-left: 25px;
+        display: flex;
+        flex-direction: column;
+        min-width: 378.25px;
+        height: 281.83px;
+        flex: 1 1 250px;
+        color: white;
+        font-family: "Poppins", sans-serif;
+      
+        li {
+          list-style-type: none;
+          text-decoration: none;
+          color: white;
+          font-weight: 500;
+          font-size: 18px;
+          margin-bottom: 15px;
+        }
+      
+        li:hover {
+          transition: 0.3s;
+          color: #820ad1;
+        }
+      
+        .FooterNavigatorMenu-P {
+          margin-bottom: 25px;
+        }
+      
+      }
+      .FooterNavigatorMenu-Icon-Google {
+        
+        width: 300px;
+        height: 200px;
+       
+      
+      }
+      .FooterNavigatorMenu-Icon-Apple {
+        margin-top: -100px;
+        width: 300px;
+        height: 200px;
+      }
+    }
+  }

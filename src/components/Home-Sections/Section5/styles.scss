@@ -1,0 +1,30 @@
+.section-5 {
+    display: flex;
+    width: 100vw;
+    height: 985px;
+    align-items: center;
+    background-image: url("https://nubank.com.br/_next/static/images/7d6aa8064e4faf1f054273bd7be7250d-three-women-smiling-outdoors-lg@1x.jpg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    .section5-bloco1 {
+      width: 500px;
+      margin-left: 15%;
+  
+      p {
+        font-weight: 700;
+        font-size: 48px;
+        color: white;
+        margin-bottom: 25px;
+      }
+      span {
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: 700;
+        color: white;
+      }
+  
+    }
+  
+  }
+  

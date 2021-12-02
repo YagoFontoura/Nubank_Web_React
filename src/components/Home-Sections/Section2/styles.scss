@@ -1,0 +1,56 @@
+.section-2 {
+    display: flex;
+    background-color: #ffffff;
+    width: 100vw;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: space-between;
+    align-items: center;
+  
+    .section2-container {
+      width: 1000px;
+      display: flex;
+      align-items: center;
+      font-size: 35px;
+      margin-left: 250px;
+    }
+  
+    .section2-container h2 {
+      color: #820ad1;
+      font-weight: 700;
+      font-size: 42px;
+    }
+    .section2-container p {
+      line-height: 50px;
+      font-weight: 500;
+      font-size: 42px;
+      margin-bottom: 30px;
+    }
+    .section2-bloco1 a {
+      text-align: start;
+      margin-top: 10px;
+    }
+    .section2-bloco1 img {
+      margin-bottom: -5px;
+      margin-left: 10px;
+    }
+    .section2-bloco2 {
+      
+    }
+    .Saibamais {
+      display: inline-flex;
+      color: #820ad1;
+      font-size: 18px !important;
+      text-decoration: none;
+      font-weight: 500;
+  
+      span {
+        margin-right: 10px;
+      }
+    }
+  
+    #CardVertical {
+      width: 531px;
+    }
+  }

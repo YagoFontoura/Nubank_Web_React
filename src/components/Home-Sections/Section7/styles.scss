@@ -1,0 +1,24 @@
+.Section7 {
+    display: flex;
+    width: 100%;
+    height: 785px;
+    align-items: center;
+  
+    background-image: url("https://nubank.com.br/_next/static/images/1783c588df84644447cd8585291274fd-man-with-cellphone-lg@1x.jpg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    .Section7-Bloco1 {
+      width: 500px;
+      font-size: 48px;
+      font-weight: 500;
+      color: white;
+      margin-left: 25%;
+  
+      span {
+        text-decoration: none;
+        font-size: 18px;
+        color: white;
+      }
+    }
+  }

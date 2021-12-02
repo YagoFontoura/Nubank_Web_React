@@ -1,0 +1,29 @@
+.FooterEnterprise {
+    display: flex;
+    width: 100%;
+    height: 209px;
+    background-color: #111111;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+    border-top: 1px solid rgba(207, 207, 207, 0.1);
+    border-bottom: 1px solid rgba(207, 207, 207, 0.1);
+  
+    .FooterEnterprise-Bloco1 {
+      display: flex;
+      align-items: center;
+  
+      span {
+        margin-right: 100px;
+      }
+      
+    }
+    .FooterEnterprise-Bloco2 svg {
+      transition: 0.1s;
+      margin-right: 25px;
+      fill: white;
+    }
+    .FooterEnterprise-Bloco2 svg:hover {
+      fill: #820ad1;
+    }
+  }
