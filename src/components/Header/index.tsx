@@ -3,7 +3,7 @@ import Image from "next/image";
 import LogoIcon from "../../assets/nubank-logo-2021-purple.svg";
 import LoginIcon from "../../assets/icon-exit.svg";
 import ArrowDown from "../../assets/arrow-down.svg";
-import {animationIn, animationOut} from './animation'
+import {animationForYouIn, animationForYouOut, animationIn ,animationOut,animationOutNubank,animationInNubank } from './animation'
 
  
 
@@ -22,9 +22,9 @@ export function Header() {
           </span>
           <nav className="Nav-Header">
             <ul>
-              <li className="ButtonClick animation">Página Inicial</li>
+              <li  className="ButtonClick animation">Página Inicial</li>
 
-              <li onMouseEnter={animationIn} onMouseLeave={animationOut} className="RotateArrow ">
+              <li  onMouseEnter={animationForYouIn} onMouseLeave={animationForYouOut} className="RotateArrow">
                 Para você
                 <span className="RotateArrow">
                   <Image
@@ -35,7 +35,7 @@ export function Header() {
                   />
                 </span>
               </li>
-              <li className="RotateArrow animation">
+              <li className="RotateArrow animation" onMouseEnter={animationIn} onMouseLeave={animationOut}>
                 Para seu negócio
                 <span>
                   <Image
@@ -46,7 +46,7 @@ export function Header() {
                   />
                 </span>
               </li>
-              <li className="RotateArrow animation">
+              <li className="RotateArrow animation" onMouseEnter={animationInNubank} onMouseLeave={animationOutNubank}>
                 O Nubank{" "}
                 <span>
                   <Image
@@ -57,7 +57,7 @@ export function Header() {
                   />
                 </span>
               </li>
-              <li className="ButtonClick animation">Perguntas</li>
+              <li className="ButtonClick">Perguntas</li>
             </ul>
           </nav>
         </div>
@@ -77,7 +77,7 @@ export function Header() {
         </div>
       </div>
       
-        <div id="ParaVoce" className="Sub-Menu ParaVoceMenu "> {/* MenuActive */}
+        <div id="my-row" className="Sub-Menu ParaVoceMenu "> {/* MenuActive */}
           <ul>
             <p>Nubank</p>
             <li>Cartão de Crédito</li>
@@ -97,14 +97,37 @@ export function Header() {
           </ul>
         </div>
 
-        <div>
-
+        <div id="my-row2" className="Sub-Menu   for-your-business ">
+          <ul>
+            <p>Nubank PJ</p>
+            <li>Conta PJ</li>
+            <li>Cartão de Crédito PJ</li>
+          </ul>
           
         </div>
 
-      
-
-
+        <div id="my-row3" className="Sub-Menu   O-Nubank ">
+          <ul>
+            <p>Sobre Nós</p>
+            <li>O Nu</li>
+            <li>Sala de imprensa</li>
+            <li>Carreiras</li>
+            
+          </ul>
+          <ul>
+            <p>Outros canais</p>
+            <li>Blog</li>
+            <li>Newsletter</li>
+            <li>Comunidade</li>
+            
+          </ul>
+          <ul>
+            <p>Nubank pelo Mundo</p>
+               <li>México</li>
+               <li>Colômbia</li>
+               <li>Argentina</li>
+          </ul> 
+        </div>
         <div className="MenuBurguer">
 
         </div>
