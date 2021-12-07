@@ -77,7 +77,7 @@ export function Header() {
         </div>
       </div>
       
-        <div id="my-row" className="Sub-Menu ParaVoceMenu "> {/* MenuActive */}
+        <div id="my-row" onMouseEnter={animationForYouIn} onMouseLeave={animationForYouOut} className="Sub-Menu ParaVoceMenu "> {/* MenuActive */}
           <ul>
             <p>Nubank</p>
             <li>Cartão de Crédito</li>
@@ -97,7 +97,7 @@ export function Header() {
           </ul>
         </div>
 
-        <div id="my-row2" className="Sub-Menu   for-your-business ">
+        <div id="my-row2"  onMouseEnter={animationIn} onMouseLeave={animationOut} className="Sub-Menu   for-your-business ">
           <ul>
             <p>Nubank PJ</p>
             <li>Conta PJ</li>
@@ -106,7 +106,7 @@ export function Header() {
           
         </div>
 
-        <div id="my-row3" className="Sub-Menu   O-Nubank ">
+        <div id="my-row3"  onMouseEnter={animationInNubank} onMouseLeave={animationOutNubank} className="Sub-Menu   O-Nubank ">
           <ul>
             <p>Sobre Nós</p>
             <li>O Nu</li>

@@ -6,7 +6,7 @@ import { ButtonHover } from '../../Header/animation';
 
 export function HomeSection2() {
     return(
-        <section className="section-2" onWheel={ButtonHover}>
+        <section className="section-2" onMouseEnter={ButtonHover}>
           <article className="section2-container">
             <div className="section2-bloco1">
               <h2 className="hoverFixed">Cartão de Crédito</h2>

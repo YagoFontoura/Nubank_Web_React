@@ -1,3 +1,11 @@
+  header {
+    width: 100vw;
+    height: 50.99px;
+    position: fixed;
+    display: flex;
+    z-index: 100;
+  }
+
 .Container-Header {
     display: flex;
     position: fixed;
@@ -14,7 +22,7 @@
       margin-left: 56px;
     }
     .Menu {
-      display: flex;
+      display: flex; 
       align-items: center;
     }
     .LoginButton button {
@@ -48,6 +56,9 @@
           align-items: center;
           margin-left: 50px;
           justify-content: center;
+          padding: 25px;
+         
+         
   
           span {
             display: flex;
@@ -73,6 +84,8 @@
 
     /*Telinha*/    
     .Sub-Menu {
+     
+      display: flex;
       width: 100%;
       height: 300px;
       padding-top: 100px;
@@ -88,7 +101,7 @@
       animation: 0.4s DivDown;
       display: flex;
       visibility: visible;
-      margin-left: 30px;
+      
       
       
       ul {
@@ -98,6 +111,7 @@
         list-style-type: none;
         font-family: 'Poppins', sans-serif;
         margin-right: 300px;
+        margin-left: 30px;
   
   
         p{
@@ -131,7 +145,7 @@
       animation: 0.4s DivDown;
       display: flex;
       visibility: visible;
-      margin-left: 30px;
+     
       
       
       ul {
@@ -141,6 +155,7 @@
         list-style-type: none;
         font-family: 'Poppins', sans-serif;
         margin-right: 300px;
+        margin-left: 30px;
   
   
         p{
@@ -169,7 +184,7 @@
       animation: 0.4s DivDown;
       display: flex;
       visibility: visible;
-      margin-left: 30px;
+     
       
       
       ul {
@@ -178,6 +193,7 @@
         flex-direction: column;
         list-style-type: none;
         font-family: 'Poppins', sans-serif;
+        margin-left: 30px;
         margin-right: 300px;
   
   
@@ -236,7 +252,7 @@
     
 
     /*Media Query*/
-    @media (max-width: 1000px ){
+    @media (max-width: 1250px ){
       .Container-Header{
         height: 64px;
       }

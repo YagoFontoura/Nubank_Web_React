@@ -1,11 +1,12 @@
 import Image from 'next/image'
 import ArrowRight from "../../../assets/arrow-right.svg"
 import ArrowUpRight from "../../../assets/arrow-up-right.svg"
+import { ButtonRemove } from '../../Header/animation'
 
 
 export function HomeSection1() {
     return(
-        <section className="section-1">
+        <section className="section-1" onMouseOut={ButtonRemove}>
           <div className="box-text">
             <p id="text-1">
               Já se imaginou sócio do Nubank?
@@ -18,9 +19,9 @@ export function HomeSection1() {
 
           <div className="Box-Input">
             <h3>Peça sua conta e cartão de crédito do Nubank</h3>
-            <input type="text" placeholder="Digite seu CPF" />
+            <input type="input" placeholder="Digite seu CPF" />
             <br />
-            <button type="submit">
+            <button type="submit" >
               <span >Continuar</span>
               <Image src={ArrowRight} alt=" Seta para Direita" />
             </button>
