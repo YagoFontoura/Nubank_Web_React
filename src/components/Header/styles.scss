@@ -54,10 +54,10 @@
         li {
           display: flex;
           align-items: center;
-          margin-left: 50px;
+          margin-left: 25px;
           justify-content: center;
-          padding: 25px;
-         
+          padding-bottom: 25px;
+          padding-top: 25px;
          
   
           span {
@@ -103,6 +103,9 @@
       visibility: visible;
       
       
+
+      
+      
       
       ul {
         display: flex;
@@ -110,8 +113,9 @@
         flex-direction: column;
         list-style-type: none;
         font-family: 'Poppins', sans-serif;
-        margin-right: 300px;
-        margin-left: 30px;
+        margin-right: 10%;
+        margin-left: 2.5%;
+        
   
   
         p{
@@ -123,6 +127,8 @@
           font-size: 28px;
           margin-bottom: 15px;
           cursor: pointer;
+          min-width: 300px;
+          
   
         }
       }
@@ -248,11 +254,9 @@
     }
 
 
-
-    
-
     /*Media Query*/
     @media (max-width: 1250px ){
+      
       .Container-Header{
         height: 64px;
       }
@@ -268,13 +272,15 @@
         display: none;
         visibility: hidden;
       }
-  
-  
-  
-  
-  
-  
-  
-  
-  
+    }
+    @media (max-width: 400px ){
+      #logoNu {
+        width: 72px !important;
+        margin-left: 20px !important; 
+      }
+      .Container-Header{
+        height: 75px;
+      }
+    
+    
     }

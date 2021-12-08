@@ -1,6 +1,6 @@
 .section-1 {
     display: flex;
-    background-image: url("https://nubank.com.br/_next/static/images/6002261c262deff558bc06ba023f655c-woman-holding-devices_lg@1x.jpg.webp");
+    background-image: url("https://nubank.com.br/_next/static/images/feaa967a7ec8170b6d2aa266376c8478-home-hero-lg@1x.jpg.webp");
     width: 100vw;
     height: 100vh;
   
@@ -87,5 +87,12 @@
     }
     #continueButton {
       color: #808080;
+    }
+  }
+
+  @media (max-width: 750px) {
+    .section-1 {
+      background-image: url("https://nubank.com.br/_next/static/images/bf4fff0b4a263c19177c8c80346b74dc-home-hero-xs@2x.jpg.webp");
+      width: 100;
     }
   }
