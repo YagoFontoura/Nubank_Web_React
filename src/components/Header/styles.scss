@@ -1,286 +1,329 @@
-  header {
-    width: 100vw;
-    height: 50.99px;
-    position: fixed;
-    display: flex;
-    z-index: 100;
-  }
+header {
+  width: 100%;
+  height: 50.99px;
+  position: fixed;
+  display: flex;
+  z-index: 100;
+}
 
 .Container-Header {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  height: 50.99px;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 1;
+  #logoNu {
+    width: 56px;
+    margin-left: 56px;
+  }
+  .Menu {
     display: flex;
-    position: fixed;
-    width: 100%;
-    background-color: white;
-    height: 50.99px;
-    justify-content: space-between;
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    z-index: 1;
-    #logoNu {
-      width: 56px;
-      margin-left: 56px;
+  }
+  .LoginButton button {
+    display: flex;
+    background: none;
+    border: 0;
+    width: 70px;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #820ad1;
+    align-items: center;
+    margin-right: 25px;
+    cursor: pointer;
+
+    span {
+      margin-bottom: -3px;
+      margin-left: 5px;
     }
-    .Menu {
-      display: flex; 
+  }
+  .Nav-Header {
+    ul {
+      display: flex;
       align-items: center;
+      height: 25px;
+      list-style: none;
     }
-    .LoginButton button {
+    li {
       display: flex;
-      background: none;
-      border: 0;
-      width: 70px;
-      font-family: "Poppins", sans-serif;
-      font-size: 18px;
-      font-weight: 500;
-      text-decoration: none;
-      color: #820ad1;
       align-items: center;
-      margin-right: 25px;
-      cursor: pointer;
-  
-      span {
-        margin-bottom: -3px;
-        margin-left: 5px;
-      }
-    }
-    .Nav-Header {
-      ul {
-        display: flex;
-        align-items: center;
-        height: 25px;
-        list-style: none;
-        }
-        li {
-          display: flex;
-          align-items: center;
-          margin-left: 25px;
-          justify-content: center;
-          padding-bottom: 25px;
-          padding-top: 25px;
-         
-  
-          span {
-            display: flex;
-            margin-left: 10px;
-          }
-        }
-      }
-    }
-    .ButtonClick {
-      cursor: pointer;
-    }
-    .RotateArrow:hover {
-      span {
-        transition: 0.3s;
-        transform: rotate(90deg);
-      }
-    }
-    .RotateArrow{
-      span {
-        transition: 0.3s; 
-      }
-    }
-
-    /*Telinha*/    
-    .Sub-Menu {
-     
-      display: flex;
-      width: 100%;
-      height: 300px;
-      padding-top: 100px;
-      background-color: white;
-      position: relative;
-    }
-  /*ParaVoceMenu*/
-    .ParaVoceMenu {
-      display: none;
-      visibility: hidden;
-    }
-    .MenuActive {
-      animation: 0.4s DivDown;
-      display: flex;
-      visibility: visible;
-      
-      
-
-      
-      
-      
-      ul {
-        display: flex;
-        justify-content:flex-start;
-        flex-direction: column;
-        list-style-type: none;
-        font-family: 'Poppins', sans-serif;
-        margin-right: 10%;
-        margin-left: 2.5%;
-        
-  
-  
-        p{
-          color: #696969;
-          margin-bottom: 15px;
-        }
-        li {
-          font-weight: 700;
-          font-size: 28px;
-          margin-bottom: 15px;
-          cursor: pointer;
-          min-width: 300px;
-          
-  
-        }
-      }
-    }
-
-
-
-
-
-
-
-
-    /*for your business*/
-    .for-your-business{ 
-      display: none;
-      visibility: hidden;
-    }
-    
-    .MenuActive1 {
-      animation: 0.4s DivDown;
-      display: flex;
-      visibility: visible;
-     
-      
-      
-      ul {
-        display: flex;
-        justify-content:flex-start;
-        flex-direction: column;
-        list-style-type: none;
-        font-family: 'Poppins', sans-serif;
-        margin-right: 300px;
-        margin-left: 30px;
-  
-  
-        p{
-          color: #696969;
-          margin-bottom: 15px;
-        }
-        li {
-          font-weight: 700;
-          font-size: 28px;
-          margin-bottom: 15px;
-          cursor: pointer;
-  
-        }
-      }
-    }
-
-
-    /* O-Nubank  */
-
-    .O-Nubank {
-      display: none;
-      visibility: hidden;
-
-    } 
-    .MenuActive2 {
-      animation: 0.4s DivDown;
-      display: flex;
-      visibility: visible;
-     
-      
-      
-      ul {
-        display: flex;
-        justify-content:flex-start;
-        flex-direction: column;
-        list-style-type: none;
-        font-family: 'Poppins', sans-serif;
-        margin-left: 30px;
-        margin-right: 300px;
-  
-  
-        p{
-          color: #696969;
-          margin-bottom: 15px;
-        }
-        li {
-          font-weight: 700;
-          font-size: 28px;
-          margin-bottom: 15px;
-          cursor: pointer;
-  
-        }
-      }
-    }
-
-
-
-
-
-    /*Button Burguer*/
-    .BurguerButton:hover {
-      background-color:#fff6ff;
-      }
-    .BurguerButton {
-      display: none;
-      visibility: hidden;
-      flex-direction: column;
+      margin-left: 25px;
       justify-content: center;
-      align-items: center;
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      margin-right: 5%;
-  
-      
-    
-      .BurguerLine1{
-        width: 20px;
-        height: 2px;
-        margin-bottom: 5px;
-        background-color: #111111;
-      }
-      .BurguerLine2 {
-        width: 20px;
-        height: 2px;
-        border-radius: 10%;
-        background-color: #111111;
-      }
-  
-    }
+      padding-bottom: 25px;
+      padding-top: 25px;
 
-
-    /*Media Query*/
-    @media (max-width: 1250px ){
-      
-      .Container-Header{
-        height: 64px;
-      }
-      .BurguerButton {
+      span {
         display: flex;
-      visibility: visible;
-      }
-      .LoginButton button {
-        display: none;
-        visibility: hidden;
-      }
-      .Nav-Header {
-        display: none;
-        visibility: hidden;
+        margin-left: 10px;
       }
     }
-    @media (max-width: 400px ){
-      #logoNu {
-        width: 72px !important;
-        margin-left: 20px !important; 
-      }
-      .Container-Header{
-        height: 75px;
-      }
-    
-    
+  }
+}
+.ButtonClick {
+  cursor: pointer;
+}
+.RotateArrow:hover {
+  span {
+    transition: 0.3s;
+    transform: rotate(90deg);
+  }
+}
+.RotateArrow {
+  span {
+    transition: 0.3s;
+  }
+}
+
+/*Telinha*/
+.Sub-Menu {
+  display: flex;
+  width: 100%;
+  height: 300px;
+  padding-top: 100px;
+  background-color: white;
+  position: relative;
+}
+/*ParaVoceMenu*/
+.ParaVoceMenu {
+  display: none;
+  visibility: hidden;
+}
+.MenuActive {
+  animation: 0.4s DivDown;
+  display: flex;
+  visibility: visible;
+
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+    margin-right: 10%;
+    margin-left: 2.5%;
+
+    p {
+      color: #696969;
+      margin-bottom: 15px;
     }
+    li {
+      font-weight: 700;
+      font-size: 28px;
+      margin-bottom: 15px;
+      cursor: pointer;
+      min-width: 300px;
+    }
+  }
+}
+
+/*for your business*/
+.for-your-business {
+  display: none;
+  visibility: hidden;
+}
+
+.MenuActive1 {
+  animation: 0.4s DivDown;
+  display: flex;
+  visibility: visible;
+
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+    margin-right: 300px;
+    margin-left: 30px;
+
+    p {
+      color: #696969;
+      margin-bottom: 15px;
+    }
+    li {
+      font-weight: 700;
+      font-size: 28px;
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+  }
+}
+
+/* O-Nubank  */
+
+.O-Nubank {
+  display: none;
+  visibility: hidden;
+}
+.MenuActive2 {
+  animation: 0.4s DivDown;
+  display: flex;
+  visibility: visible;
+
+  ul {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    list-style-type: none;
+    font-family: "Poppins", sans-serif;
+    margin-left: 30px;
+    margin-right: 300px;
+
+    p {
+      color: #696969;
+      margin-bottom: 15px;
+    }
+    li {
+      font-weight: 700;
+      font-size: 28px;
+      margin-bottom: 15px;
+      cursor: pointer;
+    }
+  }
+}
+
+/*Button Burguer*/
+.BurguerButton:hover {
+  background-color: #fff6ff;
+}
+.BurguerButton {
+  display: none;
+  visibility: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 5%;
+
+  .BurguerLine1 {
+    width: 20px;
+    height: 2px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    background-color: #111111;
+  }
+  .BurguerLine2 {
+    width: 20px;
+    height: 2px;
+    border-radius: 10px;
+  
+    background-color: #111111;
+  }
+}
+
+.MenuHeaderFullWidth {
+  display: none;
+  visibility: hidden;
+  flex-direction: column;
+
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  z-index: 1000;
+  list-style-type: none;
+
+  .MenuHeaderLogo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+  }
+
+  button {
+    width: 32px;
+    height: 32px;
+    background: none;
+    margin-right: 5%;
+    border: none;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  ul {
+    margin-top: 40px;
+    li {
+
+      border-bottom: 1px solid rgba(0, 0, 0, 0.37);
+      margin-bottom: 2%;
+      padding-bottom: 25px;
+      padding-top: 25px;
+      span {
+        color: #111111;
+        font-family: "Poppins", sans-serif;
+        font-size: 38px;
+        font-weight: 600;
+        margin-left: 5%;
+        
+      }
+    }
+  }
+}
+.active {
+  display: flex;
+  visibility: visible;
+}
+
+
+
+
+
+
+
+
+
+
+/*Media Query*/
+@media (max-width: 1250px) {
+  .Container-Header {
+    height: 64px;
+  }
+  .BurguerButton {
+    display: flex;
+    visibility: visible;
+  }
+  .LoginButton button {
+    display: none;
+    visibility: hidden;
+  }
+  .Nav-Header {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+
+@media (max-width: 400px) {
+  #logoNu {
+    width: 100px !important;
+    margin-left: 20px !important;
+  }
+  .Container-Header {
+    height: 100px;
+  }
+  .BurguerButton {
+
+    width: 48px;
+    height: 48px;
+
+  
+    .BurguerLine1 {
+      width: 40px;
+      height: 4px;
+    }
+    .BurguerLine2 {
+      width: 40px;
+      height: 4px;
+
+    }
+  }
+}
+

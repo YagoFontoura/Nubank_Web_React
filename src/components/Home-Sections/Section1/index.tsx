@@ -1,12 +1,12 @@
 import Image from 'next/image'
 import ArrowRight from "../../../assets/arrow-right.svg"
 import ArrowUpRight from "../../../assets/arrow-up-right.svg"
-import { ButtonRemove } from '../../Header/animation'
+
 
 
 export function HomeSection1() {
     return(
-        <section className="section-1" onMouseOut={ButtonRemove}>
+        <section className="section-1" >
           <div className="box-text">
             <p id="text-1">
               Já se imaginou sócio do Nubank?

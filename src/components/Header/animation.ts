@@ -37,17 +37,11 @@ export function animationOutNubank() {
 
 
 
-
-
-
-
-
-
-export function ButtonHover() {
-    console.log("botao ativado")
-
+export function MenuHover() {
+    const element = document.getElementById('MenuHeaderFullWidth');
+    element?.classList.add("active")
 }
-export function ButtonRemove() {
-    console.log("botao desativado")
-
+export function MenuRemoveHover() {
+    const element = document.getElementById('MenuHeaderFullWidth');
+    element?.classList.remove("active")
 }

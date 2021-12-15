@@ -3,7 +3,7 @@
     background-image: url("https://nubank.com.br/_next/static/images/feaa967a7ec8170b6d2aa266376c8478-home-hero-lg@1x.jpg.webp");
     width: 100vw;
     height: 100vh;
-  
+    
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: space-between;
@@ -19,7 +19,7 @@
       background-color: white;
       border-radius: 16px;
       flex-wrap: wrap;
-      margin-right: 65px;
+      margin-right: 5%;
     }
   
     .Box-Input button {
@@ -93,6 +93,13 @@
   @media (max-width: 750px) {
     .section-1 {
       background-image: url("https://nubank.com.br/_next/static/images/bf4fff0b4a263c19177c8c80346b74dc-home-hero-xs@2x.jpg.webp");
-      width: 100;
+      width: 100%;
+    }
+  }
+
+  @media (min-width: 320px) {
+    .section-1 {
+      width: 100%;
+      height: 100vh;
     }
   }
