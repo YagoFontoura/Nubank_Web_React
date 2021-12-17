@@ -9,12 +9,12 @@ export function HomeSection1() {
         <section className="section-1" >
           <div className="box-text">
             <p id="text-1">
-              Já se imaginou sócio do Nubank?
+            O futuro é a razão que a gente faz planos.
             </p>
             <p id="text-2">
-              Participe do NuSócios, o programa que vai oferecer milhões de pedacinhos do Nubank para os clientes.
+            Escolha o futuro. Comece a controlar melhor sua vida financeira com o Nubank.
             </p>
-            <p id="text-3" className="hover">Conheça as regras do programa NuSócios <Image src={ArrowUpRight} alt=" Seta para Direita" /></p>
+           
           </div>
 
           <div className="Box-Input">
